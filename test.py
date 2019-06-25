@@ -25,10 +25,9 @@ for i in range(10000):
 for x[0] in arange(-1,1,0.04):
    for x[1] in arange(-1,1,0.04):
       y = model.predict(x)
-      print "%6.2f %6.2f %8.4f"%(x[0],x[1],y[0])
+      print("{:6.2f} {:6.2f} {:8.4f}".format(x[0],x[1],y[0]))
 
-
-print model
-print model.kernel
+print(model)
+print(model.kernel)
 
 model.write_XML("cross2d.xml")

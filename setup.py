@@ -27,5 +27,5 @@ else:
 setup (name = 'LWPR Module',
        version = '1.1',
        description = 'Python wrapper around LWPR library',
-       ext_modules = [module]
+       ext_modules = [module],
        install_requires = requirements)
